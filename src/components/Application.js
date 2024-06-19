@@ -1,10 +1,11 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { HelmetProvider, Helmet } from 'react-helmet-async'
 
 class Application extends React.Component {
   render() {
     return (
       <div className="application">
+        <HelmetProvider>
         <Helmet>
           <meta property="og:title" content="Title Here" />
           <meta property="og:site_name" content="Propertiess" />
@@ -16,6 +17,7 @@ class Application extends React.Component {
             content="https://www.example.com/your-image.jpg"
           />
         </Helmet>
+        </HelmetProvider>
         {/* Other content of your application */}
       </div>
     );
