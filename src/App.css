@@ -6,7 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+:root {
+  --bs-primary: #ff5733;
+  --bs-secondary: #c70039;
+  --bs-success: #28a745;
+  /* Add more customizations as needed */
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
